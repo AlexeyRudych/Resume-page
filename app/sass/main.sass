@@ -1,0 +1,731 @@
+@import vars
+
+header
+	//слайдер учебный
+.slideContainer
+	width: 100%
+	height: 100vh
+.slider_container
+	position: relative
+	height: 100%
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+	.slides
+		background-color: #fff
+		list-style-type: none
+		padding: 0
+		position: relative
+		height: 100%
+		li
+			float: left
+			height: 100pxs
+			img
+				text-align: center
+				width: 100%
+	.nextSlide,
+	.prevSlide
+		background-color: rgba($grayColor, 0.1)
+		border-radius: 40%
+		cursor: pointer	
+		font-size: 25px
+		padding: 5px 10px
+	.nextSlide
+		position: absolute
+		bottom: 50%
+		left: 10%
+	.prevSlide
+		position: absolute
+		bottom: 50%
+		right: 10%
+			
+nav
+	background-color: $grayColor
+	margin: 40px 0
+	height: 100px
+	position: relative
+	.header-nav
+		width: 100%
+		background-color: $grayColor
+		position: relative
+		li
+			display: inline-block
+			a
+				line-height: 100px
+				margin: 0 10px
+				position: relative
+				&:after
+					position: absolute
+					bottom: -4px
+					left: 50%
+					content: ''
+					opacity: 0
+					width: 0%
+					height: 3px
+					background-color: $menuColor
+					transition: all .7s
+				&:hover
+					&:after
+						position: absolute
+						bottom: -4px
+						left: 15%
+						opacity: 1
+						width: 70%
+				&:active
+					&:after
+						position: absolute
+						bottom: -4px
+						left: 15%
+						content: ''
+						width: 70%
+						height: 3px
+						background-color: $menuColor
+						opacity: 1
+		.mainMenuButton
+			margin: 29px 0
+			i
+				font-size: 20px
+				color: $menuColor
+				float: left
+				margin: 0 10px
+.navLogo
+	position: absolute
+	top: -10px
+	left: 0
+	width: 100%
+	height: 120px
+	background-color: $whiteColor
+	border: 3px solid $menuColor
+	text-align: center
+.navPhone,
+.navClock						
+	width: 50%
+	height: 100%
+	float: left
+	margin: 35px 0
+	p
+		font-family: $fontOpenSans, 18px
+		font-weight: 700
+		color: $menuColor
+		margin: 0
+	i
+		font-size: 20px
+		color: $menuColor
+		float: left
+		margin: 2px 10px
+.navPhoneIcon
+	display: inline-block
+	float: right
+	font-size: 25px
+	color: $menuColor
+section.sectionAbout
+	p
+		text-align: center
+	.mainPortretContainer
+		.portretContainer
+			width: 320px
+			height: 256px
+			background-color: $darkIcons
+			position: relative
+			overflow: hidden
+			background-color: #0c0c0c
+			box-shadow: 0 3px 50px -5px #0c0c0c
+			margin: 0 0 0 17px
+			.topSide
+				width: 100%
+				height: 4%
+				background-color: #444444
+				transform: skew(52deg)
+				position: absolute
+				top: -2px
+				left: 1%
+			.botSide
+				position: absolute
+				bottom: -2px
+				left: 1%
+				width: 100%
+				height: 4%
+				background-color: #444444
+				transform: skew(-52deg)
+				z-index: 201
+			.rightSide
+				background-color: #0c0c0c
+				position: absolute
+				bottom: 0
+				right: 0
+				width: 3%
+				height: 100%
+				overflow: hidden
+				&:after
+					content: ''
+					position: absolute
+					top: 0
+					right: 0
+					width: 0
+					height: 0
+					border-top: 8px solid #444444
+					border-left: 10px solid transparent
+					border-right: 10px solid transparent
+					z-index: 200
+				&:before
+					content: ''
+					position: absolute
+					bottom: 0
+					right: 0
+					width: 0
+					height: 0
+					border-top: 13px solid #0c0c0c
+					border-left: 2px solid transparent
+					border-right: 11px solid transparent
+					z-index: 202
+					transform: rotate(90deg)
+			.portret
+				position: absolute
+				top: 3%
+				left: 3%
+				background-color: #eaeaea
+				width: 300px
+				height: 240px
+				overflow: hidden
+				.portretTopSide
+					position: absolute
+					top: 0
+					left: 5%
+					background-color: #f1f1f1
+					width: 105%
+					height: 10%
+					transform: skew(52deg)
+					z-index: 200
+				.portretBotSide
+					position: absolute
+					bottom: 0
+					left: 5%
+					background-color: #f1f1f1
+					width: 105%
+					height: 10%
+					transform: skew(-52deg)
+					z-index: 200
+				.portretRightSide
+					position: absolute
+					top: 0
+					right: 0
+					background-color: #e1e1e1
+					width: 10%
+					height: 100%
+					&:after
+						content: ''
+						position: absolute
+						bottom: 11px
+						right: -15px
+						width: 0
+						height: 0
+						border-top: 30px solid #e1e1e1
+						border-left: 30px solid transparent
+						border-right: 30px solid transparent
+						z-index: 202
+						transform: rotate(84deg)
+					&:before
+						content: ''
+						position: absolute
+						top: 11px
+						right: -15px
+						width: 0
+						height: 0
+						border-top: 30px solid #e1e1e1
+						border-left: 30px solid transparent
+						border-right: 30px solid transparent
+						z-index: 202
+						transform: rotate(96deg)
+				.portretLeftSide
+						position: absolute
+						top: 0
+						left: 0
+						background-color: #e1e1e1
+						width: 10%
+						height: 100%
+						z-index: 199
+	.aboutNameSurname
+		text-align: center
+		padding: 25px
+	.downloadResume
+		position: relative
+		display: flex
+		justify-content: center
+		a
+			i
+				font-size: 35px
+				font-weight: 500
+				color: $darkIcons
+				cursor: pointer
+	.downloadResumeLink
+		margin: 10px 0 0 0
+		position: absolute
+		left: 10%
+		width: 80%
+		height: 25px
+		background-color: $darkIcons
+		color: $whiteColor
+		font-size: 12px
+		font-weight: 600
+		text-align: center
+		line-height: 25px
+		text-transform: uppercase
+		&:after
+			content: ''
+			width: 0
+			height: 0
+			position: absolute
+			top: -8px
+			left: 45%
+			border-bottom: 10px solid $darkIcons
+			border-left: 8px solid transparent
+			border-right: 8px solid transparent
+
+section.education
+	h3
+		text-align: center
+.educationPeriod
+	position: relative
+	top: 0
+	left: 0
+	height: 100%
+	&:after
+		content: ''
+		position: absolute
+		top: 20px
+		left: 0
+		width: 100%
+		height: 3px
+		background-color: $darkIcons
+.experiencePeriod
+	position: relative
+	top: 0
+	left: 0
+	height: 100%
+	&:after
+		content: ''
+		position: absolute
+		top: 20px
+		left: 0
+		width: 100%
+		height: 3px
+		background-color: $darkIcons
+.educationContent
+	margin: 20px 0 0 0
+	position: relative
+	top: 0
+	left: 0
+	h3
+		position: relative
+		display: inline-block
+		&:after
+			content: ''
+			position: absolute
+			bottom: -10px
+			left: 0
+			width: 100%
+			height: 1px
+			background-color: $educationSectionColor
+	h3
+		text-align: left!important
+		margin: 3px
+		padding: 0!important
+.skillsContent
+	position: relative
+	top: 0
+	left: 0
+	margin: 20px 0
+	&:after
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 100%
+		height: 7px
+		background-color: $educationSectionColor
+.htmlContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 81%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200
+.cssContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 87%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200
+.sassContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 74%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200	
+.bootstrapContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 79%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200	
+.gitContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 76%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200
+.gulpContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 69%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200
+.jsContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 60%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200
+.jqueryContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 72%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200
+.angularContent
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 10%
+		height: 7px
+		background-color: $darkIcons
+		z-index: 200
+.skillsPeriod
+	position: relative
+	top: 0
+	left: 0
+	height: 100%
+	&:after
+		content: ''
+		position: absolute
+		top: 20px
+		left: 0
+		width: 100%
+		height: 3px
+		background-color: $darkIcons
+.skillsNumber
+	margin-top: 27px
+	line-height: 32px
+	color: $darkIcons
+	font-size: 25px
+section.education//second for portret
+	.portretContainer
+		margin: 20px 0 0 15px
+		width: 320px
+		height: 415px
+		background-color: $darkIcons
+		position: relative
+		overflow: hidden
+		background-color: #0c0c0c
+		box-shadow: 0 3px 50px -5px #0c0c0c
+		.topSide
+			width: 100%
+			height: 4%
+			background-color: #444444
+			transform: skew(40deg)
+			position: absolute
+			top: -4px
+			left: 1%
+		.botSide
+			position: absolute
+			bottom: -5px
+			left: 1%
+			width: 100%
+			height: 4%
+			background-color: #444444
+			transform: skew(-40deg)
+			z-index: 201
+		.rightSide
+			background-color: #0c0c0c
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 5%
+			height: 100%
+			overflow: hidden
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				width: 0
+				height: 0
+				border-top: 16px solid #444444
+				border-left: 20px solid transparent
+				border-right: 14px solid transparent
+				z-index: 200
+			&:before
+				content: ''
+				position: absolute
+				bottom: 1px
+				right: -6px
+				width: 0
+				height: 0
+				border-top: 14px solid #0c0c0c
+				border-left: 7px solid transparent
+				border-right: 13px solid transparent
+				z-index: 202
+				transform: rotate(94deg)
+		.portret
+			position: absolute
+			top: 3%
+			left: 3%
+			background-color: #eaeaea
+			width: 300px
+			height: 400px
+			overflow: hidden
+			.logoOR
+				position: absolute
+				top: 38%
+				left: 38%
+				.logoContainer
+					width: 70px
+					height: 70px
+					border-radius: 50%
+					position: absolute
+					top: 6%
+					left: 7%
+					z-index: 199
+					background-color: $darkColor
+					cursor: pointer
+			img
+				width: 60px
+			.html5
+				position: absolute
+				top: 10%
+				left: 17%
+			.css
+				position: absolute
+				top: 10%
+				left: 63%
+			.bootstrap
+				position: absolute
+				top: 40%
+				left: 10%
+			.js
+				position: absolute
+				top: 15%
+				left: 40%
+			.jquery
+				position: absolute
+				top: 60%
+				left: 40%
+			.sass
+				position: absolute
+				top: 40%
+				left: 70%
+			.git
+				position: absolute
+				top: 75%
+				left: 20%
+			.gulp
+				position: absolute
+				top: 80%
+				left: 60%
+			.portretTopSide
+				position: absolute
+				top: -1px
+				left: 4%
+				background-color: #f1f1f1
+				width: 105%
+				height: 8%
+				transform: skew(39deg)
+				z-index: 200
+			.portretBotSide
+				position: absolute
+				bottom: 7px
+				left: 4%
+				background-color: #f1f1f1
+				width: 105%
+				height: 8%
+				transform: skew(-39deg)
+				z-index: 200
+			.portretRightSide
+				position: absolute
+				top: 0
+				right: -2px
+				background-color: #e1e1e1
+				width: 9%
+				height: 100%
+				overflow: hidden
+				&:after
+					content: ''
+					position: absolute
+					bottom: 24px
+					right: -18px
+					width: 0
+					height: 0
+					border-top: 29px solid #e1e1e1
+					border-left: 26px solid transparent
+					border-right: 43px solid transparent
+					z-index: 202
+					transform: rotate(84deg)
+				&:before
+					content: ''
+					position: absolute
+					top: 14px
+					right: -18px
+					width: 0
+					height: 0
+					border-top: 30px solid #e1e1e1
+					border-left: 30px solid transparent
+					border-right: 30px solid transparent
+					z-index: 202
+					transform: rotate(83deg)
+			.portretLeftSide
+					position: absolute
+					top: 0
+					left: -2px
+					background-color: #e1e1e1
+					width: 9%
+					height: 100%
+					z-index: 199
+
+section.contactFormSection
+	text-align: center
+	height: auto
+	background-color: $whiteColor
+.mainTitleContent
+	text-align: center
+.contactForm
+	input
+		width: 100%
+		margin-bottom: 24px
+	textarea
+		width: 100%
+	button
+		float: right
+		margin: 10px 14px 0 0
+.managementStudy
+	text-align: left
+	span
+		color: $darkIcons
+	p
+		margin: 16px 0
+	.lastP
+		margin-left: 68px
+.managementContainer
+	margin-top: 108px
+	h3
+		display: inline-block
+		margin: 0 0 30px 0
+		position: relative
+		text-transform: uppercase
+		&:after
+			position: absolute
+			bottom: -30%
+			left: 0
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: $darkColor
+.workHoures
+	text-align: left
+	span
+		color: $darkIcons
+	p
+		margin: 16px 0
+	.lastP
+		margin-left: 68px
+.workHouresContainer
+	margin-top: 108px
+	h3
+		display: inline-block
+		margin: 0 0 15px 0
+		position: relative
+		text-transform: uppercase
+		&:after
+			position: absolute
+			bottom: -30%
+			left: 0
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: $darkColor
+.socialNetworks
+	display: flex
+	align-items: center
+	.socialIcon
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: $darkColor
+		margin: 0 40px 0 0
+		cursor: pointer
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: all .4s
+		&:hover
+			background-color: $mainColor
+		i
+			color: $whiteColor
+			z-index: 999
+
+footer
+	width: 100%
+	height: 130px
+	background-color: $darkColor
+	display: flex
+	align-items: center
+	position: relative
+	top: 0
+	left: 0
+	span
+		color: $whiteColor
+		font-size: 14px
+		font-weight: 500
+	button
+		float: right	

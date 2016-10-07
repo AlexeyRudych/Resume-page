@@ -1,0 +1,160 @@
+$fontRoboto:  'RobotoRegular', sans-serif
+$fontOpenSans: 'OpenSansRegular', sans-serif
+$mainColor: #696969
+$grayColor: #eaeaea
+$darkColor: #191919
+$darkIcons: #000000
+$darkTitle: #171717
+$whiteColor: #ffffff
+$menuColor: #1a1a1a
+$educationSectionColor: #bcbcbc
+body
+	margin: 0
+	padding: 0
+	width: 100%
+	color: $mainColor
+	font-family: "RobotoRegular", sans-serif
+	font-size: 16px
+	font-weight: 600
+	overflow-x: hidden
+input,
+textarea
+	outline: none
+	border: 2px solid $darkColor
+	font-size: 14px
+	font-weight: 500
+	padding: 3px 0 3px 5px
+button
+	outline: none
+	float: right
+	width: 25px
+	height: 25px
+	border-radius: 50%
+	border: 3px solid $darkIcons
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	background-color: transparent
+	i
+		font-size: 15px!important
+		font-weight: 500!important
+		color: $darkIcons!important
+h1
+	font: $fontOpenSans
+	font-weight: 700
+	font-size: 30px
+	color: $darkIcons
+	text-transform: uppercase
+h2
+	font-family: $fontOpenSans
+	font-weight: 700
+	font-size: 30px
+	color: $menuColor
+	text-transform: uppercase
+	margin: 10px
+h3
+	font-family: $fontOpenSans
+	font-size: 23px
+	font-weight: 700
+	color: $menuColor
+	margin: 5px
+h4
+	font-family: $fontOpenSans
+	font-size: 17px
+	font-weight: 700
+	color: $darkColor
+	margin: 10px 0
+	padding: 0
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0s
+a
+	text-transform: uppercase
+	text-decoration: none!important
+	color: $menuColor!important
+	font-family: $fontRoboto, 16px
+	font-weight: 700
+	list-style-type: none
+
+.container-fluid
+	padding: 0
+.auth_buttons
+	background-color: transparent
+	border: medium none
+	display: none
+	cursor: pointer
+.icon
+	cursor: pointer
+	color: $menuColor
+
+.mt-20
+	margin-top: 20px
+.mt-50
+	margin-top: 50px
+.mt-70
+	margin-top: 70px
+.mt-100
+	margin-top: 100px
+.mb-100
+	margin-bottom: 100px
+
+.mainTitleContainer
+	display: flex
+	justify-content: center
+	align-items: center
+.mainTitle
+	display: inline-block
+	h1
+		position: relative
+		margin: 40px 0
+		&:after
+			position: absolute
+			bottom: -30%
+			left: 17%
+			content: ''
+			width: 66%
+			height: 2px
+			background-color: $darkColor
+
+.logoOR
+	width: 80px
+	height: 80px
+	background-color: $whiteColor
+	border-radius: 50%
+	position: absolute
+	left: 47%
+	top: 22%
+	z-index: 198
+	cursor: pointer
+	overflow: hidden
+	transition: all .4s
+	&:hover
+		box-shadow: 0 3px 50px -10px $whiteColor
+	.logoContainer
+		width: 70px
+		height: 70px
+		border-radius: 50%
+		position: absolute
+		top: 7%
+		left: 6%
+		z-index: 199
+		background-color: $darkColor
+		cursor: pointer
+		.logoO,
+		.logoR
+			position: absolute
+			font-family: "RobotoRegular", sans-serif
+			font-size: 47px
+			font-weight: 600
+			color: $whiteColor
+		.logoO
+			z-index: 200
+			bottom: 4%
+			left: 5%
+		.logoR
+			z-index: 201
+			bottom: 4%
+			left: 47%

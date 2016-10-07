@@ -1,0 +1,312 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.header-nav ul{
+		display: none;
+	}
+	.navLogo h2{
+	font-size: 30px;
+	}
+	.navLogo h3{
+	font-size: 22px;
+	}
+	.aboutNameSurname{
+	padding: 0!important;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.navPhone, .navClock{
+	display: none;
+}
+.mainMenuButton{
+		display: block;
+	}
+.header-nav .navBlock{
+		display: none;
+	}
+.header-nav ul li{
+	width: 100%;
+}
+.header-nav ul li a{
+	margin-left: 30px;
+	padding: 0;
+	line-height: 30px;
+}
+.navPhone {
+	width: 80%
+}
+.navPhone i{
+	display: none;
+}
+nav{
+	margin: 30px 0;
+	height: 70px;
+}
+.navLogo{
+	height: 90px;
+}
+.navLogo h2{
+	margin: 5px;
+	font-size: 29px;
+	}
+	.navLogo h3{
+	font-size: 20px;
+	}
+	.navPhoneIcon{
+	font-size: 20px;
+	float: right;
+	margin: 25px 10px 0 0;
+}
+footer{
+height: 100px;
+}
+footer span{
+	margin-top: 30px;
+	font-size: 14px;
+}
+.logoOR{
+	top: 10%;
+}
+/*.topButton{
+	margin: 30px;
+}*/
+.mt-100{
+	margin-top: 60px;
+}
+.mt-50{
+	margin-top: 40px;
+}
+.socialIcon{
+		margin: 0 30px 0 0!important;
+	}
+	.sectionAbout p{
+	margin-top: 40px;
+
+}
+.downloadResumeLink:after{
+	left: 46%!important;
+}
+		
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.header-nav ul li a{
+	margin-left: 13px;
+	padding: 0;
+	line-height: 30px;
+	text-align: center;
+	padding: 5px;
+}
+.navPhone {
+	width: 70%
+}
+.navPhone p{
+	margin-top: 10px;
+	font-size: 12px;
+}
+.navPhone i{
+	display: none;
+}
+.navLogo{
+	height: 90px;
+}
+.navLogo h2{
+	margin: 5px;
+	font-size: 27px;
+	}
+	.navLogo h3{
+	font-size: 20px;
+	}
+footer{
+height: 90px;
+
+}
+footer span{
+	font-size: 14px;
+}
+.logoOR{
+	top: 5%;
+}
+.mt-100{
+	margin-top: 50px;
+}
+.mt-50{
+	margin-top: 35px;
+}
+	footer .logoOR{
+	display: none;
+}
+footer{
+height: 40px;
+}
+footer span{
+	font-size: 13px;
+}
+.mt-100{
+	margin-top: 50px;
+}
+.mt-50{
+	margin-top: 25px;
+}
+.workHouresContainer{
+	margin-top: 20px;
+}
+.managementContainer{
+	margin-top: 30px;
+}
+
+.downloadResumeLink:after{
+	left: 47%!important;
+}
+.workHouresContainer{
+	margin-top: 108px;
+}
+.managementContainer{
+	margin-top: 108px;
+}
+.managementContainer h3{
+	font-size: 21px;
+}
+.workHouresContainer h3{
+font-size: 21px;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.header-nav ul li a{
+	margin-left: 0;
+	padding: 0;
+	line-height: 30px;
+	font-size: 0.8em;
+	text-align: center;
+}
+.navPhone{
+	width: 100%;
+	background-color: #eaeaea;
+	padding: 40px 5px 23px 5px;
+	margin: 0;
+	text-align: center;
+}
+.navLogo h2{
+	margin: 5px;
+	font-size: 22px;
+	}
+	.navLogo h3{
+	font-size: 18px;
+	}
+.mainMenuButton{
+		margin: 0;
+		font-size: 20px;
+}
+nav{
+	margin: 20px 0;
+}
+.educationContent{
+	padding: 3px;
+}
+h3{
+	font-size: 17px;
+}
+h4{
+	font-size: 16px;
+}
+body,p{
+	font-size: 15px;
+}
+.skillsNumber{
+	line-height: 30px;
+}
+footer .logoOR{
+	display: none;
+}
+footer{
+height: 40px;
+}
+footer span{
+	font-size: 13px;
+}
+.topButton{
+	margin-left: 15px;
+}
+.mt-100{
+	margin-top: 50px;
+}
+.mt-50{
+	margin-top: 25px;
+}
+.skillsPeriod:after{
+	position: absolute;
+	top: 15px;
+}
+.workHouresContainer{
+	margin-top: 20px;
+}
+.managementContainer{
+	margin-top: 30px;
+}
+.downloadResumeLink:after{
+	left: 45%!important;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+/*.mainPortretContainer{
+	display: flex;
+	justify-content: flex-start!important;
+}*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.navPhoneIcon{
+	display: none;
+}
+.header-nav .navBlock{
+		display: block;
+	}
+	.navPhone,
+	.navClock p{
+	font-size: 13px;
+	}
+	.mainMenuButton{
+		display: none;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.header-nav .navBlock{
+		display: none;
+	}
+	.header-nav ul{
+		display: block;
+	}
+	.navPhone,
+	.navClock p{
+	font-size: 16px;
+	}
+}
