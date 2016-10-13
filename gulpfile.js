@@ -28,7 +28,7 @@ gulp.task('styles', function () {
   return gulp.src('./app/sass/**/*.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix({
-		browsers: ['last 15 versions'],
+		browsers: ['last 30 versions'],
 		cascade: false
 	}))
     .pipe(gulp.dest('./app/css'));
@@ -40,17 +40,17 @@ gulp.task('images', function () {
         .pipe(imagemin({
           progressive: true
         }))
-        .pipe(gulp.dest('kiev/img'));
+        .pipe(gulp.dest('build/img'));
 });
 
 //BUILD
 gulp.task('build', ['images'] ,function () {
     return gulp.src('./app/index.html')
-        .pipe(cleanDest('kiev'))
+        .pipe(cleanDest('build'))
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', csso()))
-        .pipe(gulp.dest('kiev'));
+        .pipe(gulp.dest('build'));
 });
 //ftp
 gulp.task('send', ['build', 'images'], function() {

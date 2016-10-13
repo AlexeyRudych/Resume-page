@@ -1,6 +1,3 @@
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.header-nav ul{
 		display: none;
@@ -15,9 +12,10 @@
 	padding: 0!important;
 }
 }
-
-/* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+.navPhone{
+	position: absolute;
+}
 .navPhone, .navClock{
 	display: none;
 }
@@ -70,37 +68,26 @@ footer span{
 .logoOR{
 	top: 10%;
 }
-/*.topButton{
-	margin: 30px;
-}*/
 .mt-100{
 	margin-top: 60px;
 }
 .mt-50{
 	margin-top: 40px;
 }
-.socialIcon{
+.socialIcon a{
 		margin: 0 30px 0 0!important;
 	}
 	.sectionAbout p{
 	margin-top: 40px;
-
 }
 .downloadResumeLink:after{
 	left: 46%!important;
+}	
 }
-		
-}
-
-/* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.header-nav ul li a{
-	margin-left: 13px;
-	padding: 0;
-	line-height: 30px;
-	text-align: center;
-	padding: 5px;
-}
+	.portretContainer{
+		margin: 0 auto!important;
+	}
 .navPhone {
 	width: 70%
 }
@@ -123,7 +110,6 @@ footer span{
 	}
 footer{
 height: 90px;
-
 }
 footer span{
 	font-size: 14px;
@@ -152,13 +138,6 @@ footer span{
 .mt-50{
 	margin-top: 25px;
 }
-.workHouresContainer{
-	margin-top: 20px;
-}
-.managementContainer{
-	margin-top: 30px;
-}
-
 .downloadResumeLink:after{
 	left: 47%!important;
 }
@@ -169,21 +148,31 @@ footer span{
 	margin-top: 108px;
 }
 .managementContainer h3{
-	font-size: 21px;
+	font-size: 21px!important;
 }
 .workHouresContainer h3{
 font-size: 21px;
 }
+#particles-js{
+	display: none;
 }
-
-/* Extra Small Devices, Phones */
+#owl-demo{
+	height: 100%!important;
+}
+}
 @media only screen and (max-width : 480px) {
-.header-nav ul li a{
-	margin-left: 0;
-	padding: 0;
-	line-height: 30px;
-	font-size: 0.8em;
-	text-align: center;
+.minNavphone p{
+	margin: 20px 20px 7px 5px!important;
+}
+.minNavphone{
+	width: 200%!important;
+	left: -100%!important;
+}
+.minMenuNav{
+	width: 200%;
+}
+.minMenuNav a{
+	margin: 5px 0 0 20px
 }
 .navPhone{
 	width: 100%;
@@ -197,7 +186,7 @@ font-size: 21px;
 	font-size: 22px;
 	}
 	.navLogo h3{
-	font-size: 18px;
+	font-size: 15px;
 	}
 .mainMenuButton{
 		margin: 0;
@@ -219,7 +208,9 @@ body,p{
 	font-size: 15px;
 }
 .skillsNumber{
-	line-height: 30px;
+	line-height: 25px;
+	font-size: 25px;
+	margin-top: 20px
 }
 footer .logoOR{
 	display: none;
@@ -253,34 +244,16 @@ footer span{
 	left: 45%!important;
 }
 }
-
-/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
 }
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
 }
-
-/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-/*.mainPortretContainer{
-	display: flex;
-	justify-content: flex-start!important;
-}*/
 }
 
-/* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
 }
 
-/* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 .navPhoneIcon{
 	display: none;
@@ -296,8 +269,6 @@ footer span{
 		display: none;
 	}
 }
-
- /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 .header-nav .navBlock{
 		display: none;
